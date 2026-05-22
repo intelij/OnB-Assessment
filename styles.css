@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar"
+        "hero hero hero hero hero"
+        "sidebar content content content content"
+        ". footer footer footer .";
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.navbar {
+    background-color: purple;
+    grid-area: navbar;
+    height: 50px;
+}
+
+.hero {
+    background-color: pink;
+    grid-area: hero;
+    height: 80px;
+}
+
+.content {
+    background-color: red;
+    grid-area: content;
+    min-height: 100px;
+}
+
+.sidebar {
+    background-color: lightblue;
+    grid-area: sidebar;
+    min-height: 100px;
+}
+
+.footer {
+    background-color: yellow;
+    grid-area: footer;
+    height: 75px;
+    width: 60%;
+    text-align: center;
+}
